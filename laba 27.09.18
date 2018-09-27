@@ -1,0 +1,33 @@
+#include <iostream>
+int main()
+{
+    std::cout << 1 << " " << 13 << " " << 49 << std::endl;
+	system("pause");
+
+
+	{
+		char c;
+		std::cin >> c;
+		
+		std::cout << 1 << c << 13 << c << 49 << std::endl;
+	} 
+
+	{
+        char c;
+		std::cin >> c;
+		char a;
+		std::cin >> a;
+		char b;
+		std::cin >> b;
+		std::cout << c << ' ' << a << ' ' << b << std::endl;
+	}
+
+	{
+		char a;
+		std::cin >> a;
+		char x;
+	    x = 12*a*a + 7*a - 12;
+		std::cout << x << std::endl;
+	}
+	system("pause");
+	}
