@@ -12,6 +12,7 @@ set(CMAKE_CXX_FLAGS
 
 # enum your files
 add_executable(executable
+laba1
 
 )
 find_package (Threads)

@@ -1,0 +1,119 @@
+#include "pch.h"
+#include <iostream>
+int main()
+{   
+	std::cout << 1 << " " << 13 << " " << 49 << std::endl;
+	system("pause");
+	{
+		char c;
+		std::cin >> c;
+
+		std::cout << 1 << c << 13 << c << 49 << std::endl;
+	}
+	{
+		char c, a, b;
+		std::cin >> c;
+		std::cin >> a;
+		std::cin >> b;
+		std::cout << c << ' ' << a << ' ' << b << std::endl;
+	} 
+	{
+		int a, x, y;
+		std::cout << "a=";
+		std::cin >> a;
+		x = 12*a*a + 7*a - 12;
+		y = 3 * x*x*x + 4 * x*x - 11 * x + 1;
+		std::cout << "x=" << x << std::endl << "y=" << y << std::endl;
+	}
+
+	{
+		int v, m, p;
+		std::cout << "V= ";
+		std::cin >> v;
+		std::cout << "M= ";
+		std::cin >> m;
+		p = m / v;
+		std::cout << "P=" << p << std::endl;
+	}
+	/* 
+	{
+		int a, b, x;
+		std::cout << "a=";
+		std::cin >> a;
+		std::cout << "b=";
+		std::cin >> b;
+		a*x + b == 0;
+		std::cout << x << std::endl;
+	}*/
+	{
+		int x1, y1, x2, y2, a, b, l;
+		std::cout << "x1=";
+		std::cin >> x1;
+		std::cout << "y1=";
+		std::cin >> y1;
+		std::cout << "x2=";
+		std::cin >> x2;
+		std::cout << "y2=";
+		std::cin >> y2;
+		a = x2 - x1;
+		b = y2 - y1;
+		l = sqrt(a*a + b*b);
+		std::cout << "l=" << l << std::endl;
+	}
+	{
+		int a, b, h, c, k, P;
+		std::cout << "a=";
+		std::cin >> a;
+		std::cout << "b=";
+		std::cin >> b;
+		std::cout << "h=";
+		std::cin >> h;
+		if (a > b) { c = (a - b) / 2; }
+		if (a < b) { c = (b - a) / 2; }
+		k = sqrt(c*c + h*h);
+		P = a + b + 2*k;
+		std::cout << "P=" << P << std::endl;
+	}
+	{
+		int r1, r2, s1, s2, S;
+		std::cout << "r1=";
+		std::cin >> r1;
+		std::cout << "r2=";
+		std::cin >> r2;
+		if (r1 == r2) { S = 0; }
+		s1 = 3*r1*r1;
+		s2 = 3*r2*r2;
+		if (r1 > r2) { S = s1 - s2; }
+		if (r1 < r2) { S = s2 - s1; }
+		std::cout << "S=" << S << std::endl;
+	}
+	{
+	int a, V, S;
+	std::cout << "a=";
+	std::cin >> a;
+	V = pow(a, 3);
+	S = a * a * 6;
+	std::cout << "V=" << V << std::endl << "S=" << S << std::endl;
+	}
+	{
+	int a, P;
+	std::cout << "a=";
+	std::cin >> a;
+	P = a * 4;
+	std::cout << "P=" << P << std::endl;
+	}
+	{
+	int r, d;
+	std::cout << "r=";
+	std::cin >> r;
+	d = r * 2;
+	std::cout << "d=" << d << std::endl;
+	}
+	{
+	char name[100];
+	std::cout << " Your name: ";
+	std::cin >> name;
+	std::cout << "Hello, " << name << "! My name is C++." << std::endl;
+    }
+	system("pause");
+}
